@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import { Provider } from 'react-redux';
+import store from './redux/store';
+import TaskInput from './components/TaskInput';
+import TaskList from './components/TaskList';
+import { Container, Typography } from '@mui/material';
+import './index.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <Container maxWidth="sm">
+        <Typography variant="h3" component="h1" gutterBottom sx={{ textAlign: 'center', mt: 4 }}>
+          To-Do List
+        </Typography>
+        <TaskInput />
+        <TaskList />
+      </Container>
+    </Provider>
   );
 }
 
