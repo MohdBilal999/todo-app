@@ -12,7 +12,7 @@ A modern, visually appealing To-Do application built with React, Redux, and Mate
 
 ## Demo
 
-You can view a live demo of the project [here](#) (replace this with the hosted link).
+You can view a live demo of the project [here](https://todo-app-chi-liard.vercel.app/) 
 
 ## Getting Started
 
